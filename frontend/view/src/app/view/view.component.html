@@ -1,0 +1,32 @@
+<div class="container">
+    <label class = "">Search Expense </label><br>
+    <input type="text" #searchdata required placeholder="Enter ExpenseID">
+    <button (click)="getExpenseDetails(searchdata.value)">Search</button><br>
+
+    <table class="table table-dark"  >
+        <thead>
+            <tr>
+                <th scope="col">expenseCodeId</th>
+                <th scope="col">employeeId</th>
+                <th scope="col">projectCode</th>
+                <th scope="col">expenseCode</th>
+                <th scope="col">startDate</th>
+                <th scope="col">endDate</th>
+                <th scope="col">expenseAmount</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{claim.expenseCodeId}}</td>
+                <td>{{claim.employeeId}}</td>
+                <td>{{claim.projectCode}}</td>
+                <td>{{claim.expenseCode}}</td>
+                <td>{{claim.startDate}}</td>
+                <td>{{claim.endDate}}</td>
+                <td>{{claim.expenseAmount}}</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
